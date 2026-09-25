@@ -8,9 +8,11 @@ The current Notion market sample contains about 54 distinct Data Engineering job
 
 This repository changes **how** the curriculum is executed, not those evidence-backed priorities.
 
-## Why eight modules
+## Why 12 core levels plus one elective gate
 
-Eight modules preserve one obvious path without fragmenting every tool into a separate course. SQL and modeling remain separate because each has its own diagnostic/build gate. Testing, data quality, Git, Docker, and Linux are combined into a professional-delivery module because their value is demonstrated together in a reproducible pipeline.
+The previous eight modules contained the right priorities but several pages mixed too many decisions. The new structure keeps one path while splitting learning at evidence boundaries: advanced SQL vs PostgreSQL performance; Python foundations vs ETL; testing/quality vs delivery; Airflow foundations vs reliability; and Spark transformations vs performance. L13 is not normal progression—it is a gate that requires job evidence.
+
+The information architecture borrows the strongest UX pattern from Yahia Sherif's *Data Engineering Roadmap 2026*: tier tables at the root and compact level pages organized as topic → resource → action → completion → unlock. It does **not** inherit that roadmap's zero-to-senior scope or hours. The market sample below remains the authority for content and priority.
 
 ## Why Airflow precedes Spark
 
@@ -41,6 +43,10 @@ This reduces repeated scaffolding and makes progress visible as engineering matu
 - Official documentation is a reference for current behavior. Structured courses/books are primary only where they improve first-pass learning.
 - Great Expectations is optional after handwritten checks and pytest; adopting a framework before understanding the checks would hide fundamentals.
 - No Arabic resource is included merely for symmetry. An Arabic alternative must cover the exact topic well enough to replace or clarify the primary resource.
+
+## Resource-page rule
+
+Every level README contains the one recommended path. `resources.md` contains Arabic alternatives, deeper English options, practice, references and postponed material. This prevents resource browsing from becoming the work.
 
 ## Re-evaluation rule
 

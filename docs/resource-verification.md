@@ -22,17 +22,23 @@ Selection standard: topic coverage, technical accuracy, practical usefulness, fi
 | AWS Skill Builder's Data Engineering on AWS learning plan | Guided AWS context | Official role-focused material and labs | Dynamic pages may require sign-in; use only relevant modules, not certification prep |
 | AWS service docs | S3/IAM/secrets/logging | Current and authoritative security/operations guidance | Implement a small architecture; avoid broad service tours |
 
+## Reference-roadmap audit
+
+On **2026-09-25**, the actual tier, level and resource pages in [Yahia Sherif's Data Engineering Roadmap 2026](https://github.com/Yahiasherif002/Data-Engineering-Roadmap-2026) were inspected as an information-architecture and resource-discovery reference. Reused design ideas are limited to tier tables, explicit prerequisites/unlocks, dominant topic-to-resource maps, separate deep-resource pages and evidence-based completion gates.
+
+Selected resource leads reused after fit-checking include Learn Git Branching, Pro Git, GitHub Skills, Modern SQL, Use The Index Luke, PostgreSQL Exercises, Kimball techniques, Garage Education/Tech Vault topic explanations, Astronomer material, Data Engineering Zoomcamp's selected Spark exercises, Databricks/Spark references and AWS official training. Senior material such as Kubernetes, broad IaC, streaming platforms, governance stacks and deep database/Spark internals was not imported into the core path.
+
 ## Audited books used just in time
 
 Exact assignments are copied from the completed PDF audit, not guessed from online tables of contents.
 
 | Book | Classification | Assigned now |
 |---|---|---|
-| *The Data Warehouse Toolkit*, 3e | PRIMARY for Module 02 | Ch. 1 pp. 7–22; Ch. 2 pp. 37–57; Ch. 3 pp. 70–79 and 98–104; Ch. 5 pp. 147–154 |
-| *Building ETL Pipelines with Python* | SUPPLEMENTARY for Modules 03–04 | Ch. 4 pp. 47–52; Ch. 6 pp. 72–76; Ch. 13 pp. 169–181; Ch. 14 pp. 185–195 |
+| *The Data Warehouse Toolkit*, 3e | PRIMARY for L03 | Ch. 1 pp. 7–22; Ch. 2 pp. 37–57; Ch. 3 pp. 70–79 and 98–104; Ch. 5 pp. 147–154 |
+| *Building ETL Pipelines with Python* | SUPPLEMENTARY for L05–L06 | Ch. 4 pp. 47–52; Ch. 6 pp. 72–76; Ch. 13 pp. 169–181; Ch. 14 pp. 185–195 |
 | *Fundamentals of Data Engineering* | REFERENCE | Ch. 2 pp. 33–48 and 59–68; Ch. 7 pp. 235–247 and 250–257; Ch. 8 pp. 309–323 |
-| *Data Pipelines with Apache Airflow*, 2e | PRIMARY for Module 05 | Ch. 1 §§1.1–1.3; Ch. 2 §§2.2–2.6; Ch. 3 §§3.4–3.7; Ch. 5 §§5.2–5.4; Ch. 6 §§6.1, 6.4–6.6; Ch. 10 §§10.1, 10.4; Ch. 12 §§12.1–12.3; Ch. 13 §§13.2–13.6 |
-| *Learning Spark*, 2e | SUPPLEMENTARY for Module 06 | Ch. 2 pp. 25–31; Ch. 3 pp. 47–68 and 76–82; Ch. 4 pp. 94–100; Ch. 5 pp. 144–155; Ch. 7 pp. 183–205 |
+| *Data Pipelines with Apache Airflow*, 2e | PRIMARY for L08–L09 | Ch. 1 §§1.1–1.3; Ch. 2 §§2.2–2.6; Ch. 3 §§3.4–3.7; Ch. 5 §§5.2–5.4; Ch. 6 §§6.1, 6.4–6.6; Ch. 10 §§10.1, 10.4; Ch. 12 §§12.1–12.3; Ch. 13 §§13.2–13.6 |
+| *Learning Spark*, 2e | SUPPLEMENTARY for L10–L11 | Ch. 2 pp. 25–31; Ch. 3 pp. 47–68 and 76–82; Ch. 4 pp. 94–100; Ch. 5 pp. 144–155; Ch. 7 pp. 183–205 |
 
 ## Resources intentionally demoted
 
@@ -44,6 +50,6 @@ Exact assignments are copied from the completed PDF audit, not guessed from onli
 
 ## Unverified or intentionally omitted
 
-No Arabic resource was promoted to PRIMARY during this pass because no candidate was verified strongly enough across exact coverage, currency, and practical depth to outperform the selected path. The curriculum does not forbid Arabic explanations; add one only after confirming the precise lessons and using it to close a specific conceptual gap.
+No Arabic resource was promoted to universal PRIMARY. Garage Education, Tech Vault and Kube-ops topic material is listed as an alternative where the audited reference supplied a close topic match; stable lesson-level URLs and full currency were not independently established. Confirm the precise lesson before using it. The curriculum never fills an Arabic slot for symmetry.
 
 AWS Skill Builder pages are dynamic and may require authentication. The official learning plan was discoverable, but stable deep links can change. AWS service documentation remains the durable fallback.

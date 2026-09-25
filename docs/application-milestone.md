@@ -4,7 +4,7 @@
 
 Apply to a strong-fit internship or fresh-graduate role when you meet the hard eligibility constraints and roughly **60–70% of the practical requirements**. Treat an unfamiliar vendor tool as learnable unless the description clearly makes it a hard requirement.
 
-## Begin the active weekly cadence after Module 04
+## Begin the active weekly cadence after L07
 
 Required evidence:
 
@@ -19,7 +19,7 @@ Required evidence:
 - [ ] `docker compose up` starts the local system from documented instructions.
 - [ ] The project README explains architecture, trade-offs, setup, rerun behavior, and known limits.
 
-Airflow, Spark, and AWS are learned **while applications are active**.
+Airflow, Spark, and AWS are learned **while applications are active**. L08–L09 strengthen the flagship; L10–L11 create distinct Spark evidence; L12 deploys the flagship.
 
 ## Job decision rule
 

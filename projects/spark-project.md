@@ -8,6 +8,13 @@ Spark should process a dataset large and partitioned enough to make distributed 
 
 Read raw files with an explicit schema, clean and transform them with DataFrames, join reference data, write partitioned Parquet, inspect execution plans/UI, and explain a small performance experiment.
 
+## Evolution by level
+
+| Level | Increment | Evidence |
+|---|---|---|
+| L10 · PySpark DataFrames | Explicit schema, transformations, joins, windows and partitioned Parquet | Code, tests, sample output and data-layout rationale |
+| L11 · Spark Performance | One measured partition/join/cache/skew experiment | Before/after plan or UI evidence, result and limitations |
+
 ## Required evidence
 
 - [ ] Explicit input schema and malformed-row policy.

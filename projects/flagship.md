@@ -6,16 +6,20 @@ Build one small but professional batch data platform that proves the fundamental
 
 Choose a public API with stable historical records and a business process you can explain—for example, public transport, weather observations, e-commerce-like sample events, or another domain with measurable events. Avoid a source that requires scraping or complicated authentication.
 
-## Evolution by module
+## Evolution by level
 
-| Module | Increment | Inspectable evidence |
+| Level | Increment | Inspectable evidence |
 |---|---|---|
-| 01 SQL | Analytical and validation queries | Independent SQL files, expected results, comments explaining non-obvious logic |
-| 02 Modeling | Business process, grain, dimensions, facts, keys, SCD decision, DDL | `docs/model.md`, ER/star diagram, migrations/DDL, seed data, five business queries |
-| 03 Python ETL | Extract → stage → transform → load; pagination; incremental state; idempotency | Package structure, CLI/entry point, raw landing samples, rerun demonstration |
-| 04 Quality/delivery | Tests, checks, logs, configuration, Docker Compose, runbook | Passing test output, deliberate-failure evidence, health checks, one-command startup |
-| 05 Airflow | Schedule, dependencies, retries, timeouts, backfill, monitoring | DAG code, successful and failed run screenshots/log excerpts, recovery note |
-| 07 AWS | S3 landing, least-privilege IAM, secrets, compute/database, CloudWatch, cost guardrails | Architecture diagram, deployment instructions/IaC later if useful, logs, teardown/cost note |
+| L01 · SQL | Analytical and validation queries | Independent SQL files, expected results, comments explaining non-obvious logic |
+| L02 · PostgreSQL | Constraints, transactions and one measured performance decision | DDL constraints plus before/after plan note |
+| L03 · Modeling | Business process, grain, dimensions, facts, keys, SCD decision, DDL | `docs/model.md`, star diagram, migrations/DDL, seed data, five business queries |
+| L04 · Python | Maintainable package, CLI, configuration, logging and DB boundary | Package structure, reproducible command, transaction demonstration |
+| L05 · ETL | Extract → stage → transform → load; pagination; incremental state; idempotency | Raw landing samples, state strategy, rerun and reconciliation evidence |
+| L06 · Quality | Unit/integration tests, checks and failure behavior | Passing tests, quality SQL, deliberate-failure evidence |
+| L07 · Delivery | Git hygiene, Docker Compose, health checks, runbook and minimal CI | Clean checkout starts in one command; CI evidence |
+| L08 · Airflow | DAG, schedule, dependencies, connections and interval handling | DAG code and successful scheduled-run evidence |
+| L09 · Reliability | Retries, timeouts, backfills and monitoring | Failed/recovered runs, reconciled backfill, recovery note |
+| L12 · AWS | S3 landing, least-privilege IAM, secrets, compute/database, CloudWatch, cost guardrails | Architecture diagram, deployment steps, logs, teardown/cost note |
 
 ## Minimum architecture
 
@@ -61,7 +65,7 @@ api-to-warehouse-data-platform/
     └── runbook.md
 ```
 
-Create folders only when their module begins; an empty skeleton is not evidence.
+Create folders only when their level begins; an empty skeleton is not evidence.
 
 ## Recruiter-verifiable claims
 
