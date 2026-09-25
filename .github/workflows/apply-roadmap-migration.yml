@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - roadmap-migration.patch
+      - roadmap-migration.tar.gz
 
 permissions:
   contents: write
@@ -21,7 +21,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          tar -xzf roadmap-migration.tar.gz
           git am roadmap-migration.patch
-          git rm roadmap-migration.patch .github/workflows/apply-roadmap-migration.yml
+          rm roadmap-migration.patch
+          git rm roadmap-migration.tar.gz .github/workflows/apply-roadmap-migration.yml
           git commit --amend --no-edit
           git push origin HEAD:main
