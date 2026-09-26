@@ -54,11 +54,11 @@ Difficulty: `●○○○○` introductory → `●●●●●` advanced. Hours
 | [L10 · PySpark DataFrames & Parquet](10-pyspark-dataframes/README.md) | 24 | ●●●○○ | L02, L04 | L11 |
 | [L11 · Spark Performance Essentials](11-spark-performance/README.md) | 16 | ●●●●○ | L10 | Interview-ready Spark project |
 
-## Tier 5 · Practical Cloud — about 24 hours
+## Tier 5 · Practical Cloud — about 30 hours
 
 | Level | Hours | Difficulty | Prerequisites | Unlocks |
 |---|---:|---|---|---|
-| [L12 · Practical AWS for Data Engineering](12-practical-aws/README.md) | 24 | ●●●○○ | L07, preferably L09 | Cloud-deployed flagship |
+| [L12 · Practical AWS for Data Engineering](12-practical-aws/README.md) | 30 | ●●●○○ | L07, preferably L09 | Cloud-deployed flagship |
 
 ## Tier 6 · Job-Triggered Extensions — variable
 
