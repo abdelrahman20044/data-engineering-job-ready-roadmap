@@ -8,7 +8,7 @@
 
 ## Arabic / Egyptian
 
-- [Mahara-Tech](https://maharatech.gov.eg/) — search for **Transact-SQL** and use only lessons matching a diagnosed gap. Useful as an Arabic explanation, not a restart-from-zero requirement.
+- [Mahara-Tech: Transact-SQL queries using SQL Server](https://maharatech.gov.eg/course/view.php?id=2288) — use only lessons matching a diagnosed gap. Syntax is T-SQL-flavoured, so verify PostgreSQL behavior in PostgreSQL documentation.
 
 No Arabic course is mandatory here; independent problem solving is the bottleneck.
 
@@ -16,11 +16,11 @@ No Arabic course is mandatory here; independent problem solving is the bottlenec
 
 - [Modern SQL](https://modern-sql.com/) — concise visual explanations of modern SQL features.
 - [StrataScratch](https://www.stratascratch.com/) — business-flavoured interview questions; some content is paid.
-- [HackerRank SQL](https://www.hackerrank.com/domains/sql) — extra drills if the primary set is exhausted.
+- [LeetCode Top SQL 50](https://leetcode.com/studyplan/top-sql-50/) — bounded alternative for common interview patterns; do not complete it in addition to an equivalent primary set.
 
 ## Practice
 
-- [PostgreSQL Exercises](https://pgexercises.com/): joins/subqueries, aggregates, date, string, recursive and window sections.
+- [PostgreSQL Exercises: joins/subqueries](https://pgexercises.com/questions/joins/), [aggregates](https://pgexercises.com/questions/aggregates/) and [recursive queries](https://pgexercises.com/questions/recursive/). Use the site index for dates, strings and windows.
 - [DataLemur SQL](https://datalemur.com/questions?category=SQL): prioritize medium questions; stop when solutions become pattern memorization.
 
 ## Reference
@@ -32,4 +32,5 @@ No Arabic course is mandatory here; independent problem solving is the bottlenec
 
 - Skip full beginner SQL courses unless the diagnostic reveals foundational gaps.
 - Skip vendor-specific PL/SQL/T-SQL procedural depth for now.
+- Later: gaps-and-islands and sessionization only when a target interview or project needs them.
 - Do not count watched solutions as practice evidence.
