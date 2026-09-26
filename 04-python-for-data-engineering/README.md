@@ -13,17 +13,19 @@ Turn existing Python knowledge into maintainable pipeline code. Skip beginner sy
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
 | 1 | Gap diagnostic | [Exercism Python track](https://exercism.org/tracks/python) | Corey Schafer gap-only videos | Solve 3–5 exercises; list language gaps, not all topics |
-| 2 | Project structure and environments | [Python Packaging User Guide](https://packaging.python.org/en/latest/tutorials/packaging-projects/) | Kiwilytics Python material if a specific explanation is needed | Create `pyproject.toml`, package layout and reproducible commands |
-| 3 | Iteration and resource safety | [Python functional HOWTO](https://docs.python.org/3/howto/functional.html) and [`contextlib`](https://docs.python.org/3/library/contextlib.html) | — | Stream records and close files/connections safely |
-| 4 | Configuration and interfaces | [`argparse`](https://docs.python.org/3/library/argparse.html), [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) | — | Add CLI parameters and environment-based configuration |
-| 5 | Errors and logging | [Python logging HOWTO](https://docs.python.org/3/howto/logging.html) | Corey Schafer targeted videos | Replace prints/silent failures with useful exceptions and logs |
-| 6 | PostgreSQL connectivity | [Psycopg basic usage](https://www.psycopg.org/psycopg3/docs/basic/usage.html) | — | Use parameterized SQL and explicit transaction boundaries |
+| 2 | Project structure and environments | [Python Packaging User Guide](https://packaging.python.org/en/latest/tutorials/packaging-projects/) | [Mahara-Tech: Python Basics](https://maharatech.gov.eg/course/view.php?id=43) only for a diagnosed language gap | Create `pyproject.toml`, package layout and reproducible commands |
+| 3 | File/data interfaces | [`pathlib`](https://docs.python.org/3/library/pathlib.html), [`json`](https://docs.python.org/3/library/json.html) and [`csv`](https://docs.python.org/3/library/csv.html) | — | Read/write explicit UTF-8 and stream records without hidden global state |
+| 4 | Iteration, typing and resource safety | [Python functional HOWTO](https://docs.python.org/3/howto/functional.html), [`typing`](https://docs.python.org/3/library/typing.html) and [`contextlib`](https://docs.python.org/3/library/contextlib.html) | — | Add typed public interfaces; stream records and close resources safely |
+| 5 | Configuration and CLI | [`argparse`](https://docs.python.org/3/library/argparse.html), [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) | — | Add CLI parameters and environment-based configuration |
+| 6 | Errors and logging | [Python logging HOWTO](https://docs.python.org/3/howto/logging.html) | Corey Schafer targeted videos | Replace prints/silent failures with useful exceptions and contextual logs |
+| 7 | PostgreSQL connectivity | [Psycopg basic usage](https://www.psycopg.org/psycopg3/docs/basic/usage.html) | — | Use parameterized SQL and explicit transaction boundaries |
 
 ## Practice
 
 - Refactor one small script into importable functions plus a thin CLI.
 - Add type hints to public interfaces and focused docstrings where decisions are non-obvious.
 - Process a file through a generator rather than loading everything at once.
+- Parse one JSON/CSV fixture with explicit encoding, malformed-record behavior and typed output.
 - Demonstrate a database transaction that rolls back cleanly on failure.
 
 ## Project application
