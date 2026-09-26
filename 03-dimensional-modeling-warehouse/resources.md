@@ -13,13 +13,13 @@ Use *The Data Warehouse Toolkit*, 3e as the primary decision guide, but read onl
 
 ## Arabic / Egyptian
 
-- Garage Education’s data-warehouse playlist — use the sections on warehouse architecture, dimensional modeling, facts/dimensions and SCDs as an Arabic conceptual alternative.
-- Tech Vault OLTP vs OLAP material — use for the initial contrast, then return to the project decision.
+- [Garage Education: DWH Modelling](https://www.youtube.com/playlist?list=PLxNoJq6k39G_Ffv8Na1oRbob0sVHfFc_T) — select the lessons on grain, facts/dimensions, star schemas and SCDs; do not watch unrelated material linearly.
+- [Tech Vault: OLTP vs OLAP](https://www.youtube.com/watch?v=LU8pfUrdXWE) — use for the initial contrast, then return to the project decision.
 
 ## English alternatives
 
 - [Kimball dimensional-modeling techniques](https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/) — concise authoritative reference.
-- [Data with Zach](https://www.youtube.com/@eczachly_) — selected modeling discussions for another perspective; do not substitute a long playlist for building.
+- [Kimball dimensional-modeling techniques summary (PDF)](https://www.kimballgroup.com/wp-content/uploads/2013/08/2013.09-Kimball-Dimensional-Modeling-Techniques11.pdf) — direct quick reference for fact-table types, dimensional patterns and SCDs.
 - *Fundamentals of Data Engineering*, Ch. 2 pp. 33–48 and 59–68 — architecture/lifecycle reference, not a modeling textbook.
 
 ## Practice
@@ -37,6 +37,6 @@ Use *The Data Warehouse Toolkit*, 3e as the primary decision guide, but read onl
 ## Later / skip
 
 - Read later only if the project needs them: Ch. 4 pp. 111–122 and Ch. 6 pp. 167–199.
-- Later: accumulating snapshots, bridges, advanced hierarchies and enterprise bus design.
+- Later: bridges, multi-valued dimensions, advanced hierarchies and enterprise bus design. Accumulating snapshots are understood conceptually now but implemented only if the project process has milestones.
 - Skip outdated product-specific implementation advice; preserve the modeling principle and implement with current PostgreSQL.
 - Do not invent junk/bridge/mini-dimensions merely to show vocabulary.
