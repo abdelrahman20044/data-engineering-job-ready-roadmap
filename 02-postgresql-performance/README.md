@@ -6,15 +6,15 @@
 
 ## What you will learn
 
-Design trustworthy PostgreSQL tables and use evidence—not folklore—to improve a slow query. The objective is basic performance reasoning, not database administration.
+Design trustworthy PostgreSQL tables and use evidence—not folkore—to improve a slow query. The objective is basic performance reasoning, not database administration.
 
 ## Topics and learning resources
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
-| 1 | Keys, constraints, data types | [PostgreSQL DDL constraints](https://www.postgresql.org/docs/current/ddl-constraints.html) | Tech Vault database-design material | Strengthen project DDL so invalid states are rejected |
-| 2 | Index mental model | [Use The Index, Luke!](https://use-the-index-luke.com/) | Tech Vault database-storage material | Predict whether an index can help before creating it |
-| 3 | Plans and scans | [Using `EXPLAIN`](https://www.postgresql.org/docs/current/using-explain.html) | [CMU 15-445](https://15445.courses.cs.cmu.edu/) for a deeper explanation | Compare sequential/index scans and join strategies |
+| 1 | Keys, constraints, data types | [PostgreSQL DDL constraints](https://www.postgresql.org/docs/current/ddl-constraints.html) | — | Strengthen project DDL so invalid states are rejected |
+| 2 | Index mental model | [Use The Index, Luke!: the `WHERE` clause](https://use-the-index-luke.com/sql/where-clause) | [Hussein Nasser: database indexes](https://www.youtube.com/watch?v=-HtHhBQbMB4) — visual supplement | Predict whether an index can help before creating it |
+| 3 | Plans and scans | [Using `EXPLAIN`](https://www.postgresql.org/docs/current/using-explain.html) | [CMU 15-445](https://15445.courses.cs.cmu.edu/) for a later/deeper explanation | Compare sequential/index scans, estimates and join strategies |
 | 4 | Statistics and maintenance | [Planner statistics](https://www.postgresql.org/docs/current/planner-stats.html) | — | Explain estimates and recognize stale/inadequate statistics |
 | 5 | Transactions | [PostgreSQL transactions tutorial](https://www.postgresql.org/docs/current/tutorial-transactions.html) | — | Make one load atomic and safely retryable |
 
