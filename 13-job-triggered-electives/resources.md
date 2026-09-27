@@ -24,6 +24,7 @@ Choose resources only after documenting the trigger. These are starting points, 
 
 ## Kafka / streaming
 
+- Concepts first, only after a trigger: [*Streaming Systems*, Ch. 1–2](https://www.oreilly.com/library/view/streaming-systems/9781491983867/ch01.html) — bounded vs unbounded data, event time vs processing time, windows, triggers, and accumulation. Treat it as a conceptual reference, not a new book assignment.
 - [Apache Kafka documentation](https://kafka.apache.org/documentation/)
 - [Confluent Developer courses](https://developer.confluent.io/courses/)
 - Minimum focus: records, brokers, topics, partitions, consumer groups, offsets and delivery semantics.
