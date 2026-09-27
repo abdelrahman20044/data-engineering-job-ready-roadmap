@@ -12,11 +12,12 @@ Make an Airflow pipeline safe to retry, backfill and diagnose. Reliability comes
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
-| 1 | Retries and timeouts | Airflow task/DAG docs + book Ch. 6 §§6.1, 6.4–6.6 | — | Set bounded retries, delays and timeouts by failure type |
+| 1 | Retries and timeouts | [TaskFlow API](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/taskflow.html) + book Ch. 6 §§6.1, 6.4–6.6 | — | Set bounded retries, delays and timeouts by failure type |
 | 2 | Idempotent task design | [Airflow best practices](https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html) | — | Make every task safe for the same interval to rerun |
-| 3 | Catchup and backfills | [Airflow backfill](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html) + book Ch. 10 §§10.1, 10.4 | — | Backfill a small historical range and verify counts |
-| 4 | Inter-task data and sensors | Book Ch. 12 §§12.1–12.3 | Astronomer Learn | Pass references/metadata, not large payloads; add only a justified wait |
-| 5 | Monitoring and operations | Book Ch. 13 §§13.2–13.6 + Airflow UI docs | — | Diagnose one failed run and write the recovery steps |
+| 3 | Trigger rules and failure propagation | [Airflow trigger rules](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html#trigger-rules) | — | Make cleanup/join behavior explicit; avoid accidental skipped downstream work |
+| 4 | Catchup and backfills | [Airflow backfill](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html) + book Ch. 10 §§10.1, 10.4 | — | Backfill a small historical range and verify counts |
+| 5 | Inter-task data and sensors | [XComs](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/xcoms.html), [sensors](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/sensors.html) + book Ch. 12 §§12.1–12.3 | Astronomer Learn | Pass references/metadata, not large payloads; add only a justified wait |
+| 6 | Monitoring and operations | [Callbacks](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/callbacks.html) + book Ch. 13 §§13.2–13.6 | — | Diagnose one failed run and write the recovery/notification steps |
 
 ## Practice
 
@@ -24,6 +25,7 @@ Make an Airflow pipeline safe to retry, backfill and diagnose. Reliability comes
 - Rerun a successful interval and prove no duplicate effects.
 - Backfill at least three historical intervals.
 - Make one task time out; capture the useful evidence and improve configuration.
+- Demonstrate a downstream cleanup/join task with a deliberate trigger rule and explain the failure path.
 - Document what an operator checks first when a run fails.
 
 ## Project application
@@ -32,7 +34,7 @@ Add retry/timeout policies, interval-aware state, backfill evidence, failure scr
 
 ## Interview check
 
-Explain retryable vs non-retryable failures, catchup vs backfill, idempotency, XCom limitations, sensors vs polling inside tasks, timeout choices and first-line failure diagnosis.
+Explain retryable vs non-retryable failures, trigger rules, catchup vs backfill, idempotency, XCom limitations, sensors vs polling inside tasks, timeout choices and first-line failure diagnosis.
 
 ## Completion criteria
 
