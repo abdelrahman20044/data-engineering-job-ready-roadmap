@@ -43,6 +43,6 @@ Explain `WHERE` vs `HAVING`, `GROUP BY` vs window functions, `ROW_NUMBER` vs `RA
 
 ## Next
 
-Continue to [L02 · PostgreSQL & Performance Essentials](../02-postgresql-performance/README.md), then use L03 to turn the busioness process into a dimensional model.
+Continue to [L02 · PostgreSQL & Performance Essentials](../02-postgresql-performance/README.md), then use L03 to turn the business process into a dimensional model.
 
 Need an alternative or deeper reference? Open [`resources.md`](resources.md).
