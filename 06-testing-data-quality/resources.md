@@ -11,6 +11,7 @@ No Arabic resource is assigned as primary. Use an Arabic pytest explanation only
 ## English alternatives
 
 - [pytest documentation](https://docs.pytest.org/en/stable/)
+- [pytest good integration practices](https://docs.pytest.org/en/stable/explanation/goodpractices.html)
 - [Great Expectations documentation](https://docs.greatexpectations.io/) — optional after explicit checks are understood.
 - [dbt data tests](https://docs.getdbt.com/docs/build/data-tests) — reference only if dbt is later triggered.
 
@@ -34,5 +35,6 @@ No Arabic resource is assigned as primary. Use an Arabic pytest explanation only
 ## Later / skip
 
 - Later: Great Expectations, Soda, Monte Carlo and enterprise observability only if a job/project needs them.
+- Later: formal data-contract tooling and automated schema-evolution platforms; the contract itself is documented and tested now.
 - Skip creating a generic test framework; prove project behavior with the smallest useful suite.
 - Do not mock PostgreSQL out of every test—the database contract matters.

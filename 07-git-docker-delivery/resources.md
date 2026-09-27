@@ -8,8 +8,8 @@
 
 ## Arabic / Egyptian
 
-- Kube-ops Git/Docker material — practical Arabic alternative when the exact lesson matches the task.
-- TechWorld with Nana Docker explanations — clear visual supplement; official docs remain the behavior reference.
+- [Arabic Git/GitHub playlist](https://www.youtube.com/playlist?list=PLMTdZ61eBnypdpBVn2kb-2yizuEL7Phyj) — select only a diagnosed Git gap.
+- [Arabic Docker course](https://www.youtube.com/watch?v=PrusdhS2lmo) — useful structured alternative through Docker Compose; skip its Swarm/Kubernetes sections now.
 
 ## English alternatives
 
@@ -28,6 +28,8 @@
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
 - [Compose file reference](https://docs.docker.com/reference/compose-file/)
+- [Docker build best practices](https://docs.docker.com/build/building/best-practices/)
+- [Compose startup order and health checks](https://docs.docker.com/compose/how-tos/startup-order/)
 - [GitHub Actions documentation](https://docs.github.com/en/actions)
 
 ## Later / skip

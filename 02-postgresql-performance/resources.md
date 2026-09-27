@@ -6,14 +6,13 @@
 2. [Use The Index, Luke!](https://use-the-index-luke.com/) for the index mental model.
 3. PostgreSQL `EXPLAIN` documentation applied to one project query.
 
-## Arabic / Egyptian
+## Arabic / visual alternative
 
-- Tech Vault database-storage and database-design lessons, when available in the referenced roadmap: useful conceptual clarification before reading a real plan.
-- If an Arabic explanation conflicts with current PostgreSQL output, trust the current PostgreSQL documentation and measured plan.
+- [Hussein Nasser: Database Indexing Explained](https://www.youtube.com/watch?v=-HtHhBQbMB4) — use for the index mental model, then verify every conclusion with PostgreSQL `EXPLAIN (ANALYZE, BUFFERS)`.
 
 ## English alternatives
 
-- [CMU 15-445/645 Database Systems](https://15445.courses.cs.cmu.edu/) — selected lectures on storage, indexes and query execution; deeper than required.
+- [CMU 15-445/645 Database Systems](https://15445.courses.cs.cmu.edu/) — later/reference lectures on storage, indexes and query execution; deeper than required now.
 - [PostgreSQL Indexes](https://www.postgresql.org/docs/current/indexes.html) — authoritative but best used by question, not linearly.
 
 ## Practice / labs
@@ -24,7 +23,7 @@
 
 ## Reference
 
-- [`EXPLAIN`](https://www.postgresql.org/docs/current/sql-explain.html)
+- [Using `EXPLAIN`](https://www.postgresql.org/docs/current/using-explain.html) and [`EXPLAIN` syntax](https://www.postgresql.org/docs/current/sql-explain.html)
 - [Planner statistics](https://www.postgresql.org/docs/current/planner-stats.html)
 - [Routine vacuuming](https://www.postgresql.org/docs/current/routine-vacuuming.html)
 

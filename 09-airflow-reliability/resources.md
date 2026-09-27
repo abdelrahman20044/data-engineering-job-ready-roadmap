@@ -29,9 +29,11 @@ No complete Arabic reliability path was strong enough to displace the audited bo
 
 - [Airflow backfill](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/backfill.html)
 - [Airflow best practices](https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html)
+- [Trigger rules](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dags.html#trigger-rules), [XComs](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/xcoms.html) and [sensors](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/sensors.html)
+- [Callbacks](https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/callbacks.html)
 - [Airflow UI](https://airflow.apache.org/docs/apache-airflow/stable/ui.html)
 
 ## Later / skip
 
-- Later: remote executors, HA, custom providers, deferrable operators and Kubernetes.
+- Later: pools/concurrency tuning, remote executors, HA, custom providers, deferrable operators and Kubernetes.
 - Skip SLA/alerting tool sprawl; one useful failure signal and runbook is enough now.

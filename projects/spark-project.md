@@ -21,6 +21,7 @@ Read raw files with an explicit schema, clean and transform them with DataFrames
 - [ ] DataFrame transformations, joins, aggregations, and at least one window calculation.
 - [ ] Parquet output partitioned by a defensible key.
 - [ ] Tests for transformation logic on small fixtures.
+- [ ] Row and schema assertions use current PySpark testing helpers or an equivalently deterministic comparison.
 - [ ] Before/after experiment involving repartitioning, a broadcast join, caching, or skew handling.
 - [ ] `explain()` output or Spark UI evidence connected to the written conclusion.
 - [ ] README explaining lazy evaluation, narrow vs wide operations, shuffle boundaries, partition choice, and limits of the local experiment.

@@ -12,11 +12,12 @@ Build a separate PySpark pipeline using explicit schemas, DataFrame transformati
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
-| 1 | Spark model and session | *Learning Spark*, 2e, Ch. 2 pp. 25–31 | Garage Education Spark chapter | Create a local session and explain driver/executor conceptually |
-| 2 | DataFrames and schemas | Book Ch. 3 pp. 47–68 | [Spark SQL guide](https://spark.apache.org/docs/latest/sql-programming-guide.html) | Read raw data with an explicit schema and malformed-row policy |
+| 1 | Spark model and session | *Learning Spark*, 2e, Ch. 2 pp. 25–31 | [Garage Education Spark/PySpark](https://www.youtube.com/playlist?list=PLxNoJq6k39G9lTU9A65HwC0uWD-XkqqOi) | Create a local session and explain driver/executor conceptually |
+| 2 | DataFrames and schemas | Book Ch. 3 pp. 47–68 | [Spark SQL getting started](https://spark.apache.org/docs/latest/sql-getting-started.html) | Read raw data with an explicit schema and malformed-row policy |
 | 3 | Transformations and actions | Book Ch. 3 pp. 76–82 | [DE Zoomcamp module 5](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/05-batch) | Demonstrate lazy execution and inspect a plan |
-| 4 | Joins, aggregations, windows | [PySpark API](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html) | Garage Education | Build the project’s core transformations without Python UDFs |
-| 5 | Parquet and partitioned data | Book Ch. 4 pp. 94–100; Ch. 5 pp. 144–155 | Tech Vault Parquet material | Write and read partitioned Parquet with a defensible key |
+| 4 | Joins, aggregations, windows | [PySpark SQL API](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/index.html) | [Garage Education Spark/PySpark](https://www.youtube.com/playlist?list=PLxNoJq6k39G9lTU9A65HwC0uWD-XkqqOi) | Build core transformations with null/date handling and built-ins instead of Python UDFs |
+| 5 | Parquet and partitioned data | Book Ch. 4 pp. 94–100; Ch. 5 pp. 144–155 + [Parquet data source](https://spark.apache.org/docs/latest/sql-data-sources-parquet.html) | [Tech Vault: Parquet](https://www.youtube.com/watch?v=MLmrz_UfJ0Q) | Write/read partitioned Parquet with a defensible key and file layout |
+| 6 | DataFrame testing | [Testing PySpark](https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html) | — | Assert transformed rows and schema on tiny deterministic fixtures |
 
 ## Practice
 
@@ -31,7 +32,7 @@ Start the [separate Spark project](../projects/spark-project.md) with mobility/c
 
 ## Interview check
 
-Explain DataFrame vs RDD at your level, schema inference risks, transformation vs action, lazy evaluation, built-ins vs UDFs, Parquet benefits and partition-column trade-offs.
+Explain DataFrame vs RDD at your level, schema inference risks, transformation vs action, lazy evaluation, built-ins vs UDFs, deterministic DataFrame testing, Parquet benefits and partition-column trade-offs.
 
 ## Completion criteria
 

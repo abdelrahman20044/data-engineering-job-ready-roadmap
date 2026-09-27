@@ -13,16 +13,16 @@ Use SQL independently for analytical and data-quality work: reason about grain, 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
 | 1 | Diagnostic | [PostgreSQL Exercises](https://pgexercises.com/) | — | Work for 90 minutes with hints and answers closed; record gaps only |
-| 2 | Joins, cardinality, NULLs | [PostgreSQL tutorial: joins](https://www.postgresql.org/docs/current/tutorial-join.html) and [conditional expressions](https://www.postgresql.org/docs/current/functions-conditional.html) | [Mahara-Tech: Transact-SQL](https://maharatech.gov.eg/) — use only matching lessons | Write queries that expose and explain duplicate rows |
-| 3 | Aggregation and windows | [PostgreSQL tutorial: window functions](https://www.postgresql.org/docs/current/tutorial-window.html) | [Modern SQL: window functions](https://modern-sql.com/feature/window-functions) | Solve ranking, running-total, lag/lead and framed-window tasks |
+| 2 | Joins, cardinality, NULLs | [PostgreSQL joins](https://www.postgresql.org/docs/current/tutorial-join.html) and [conditional expressions](https://www.postgresql.org/docs/current/functions-conditional.html) | [Mahara-Tech: Transact-SQL](https://maharatech.gov.eg/course/view.php?id=2288) — use only matching lessons | Write queries that expose and explain duplicate rows |
+| 3 | Aggregation and windows | [PostgreSQL window functions](https://www.postgresql.org/docs/current/tutorial-window.html) | [Modern SQL: window functions](https://modern-sql.com/feature/window-functions) | Solve ranking, running-total, lag/lead and framed-window tasks |
 | 4 | CTEs and recursion | [PostgreSQL `WITH` queries](https://www.postgresql.org/docs/current/queries-with.html) | [Modern SQL](https://modern-sql.com/) | Refactor a multi-stage analysis and solve one recursive task |
-| 5 | Interview transfer | [DataLemur SQL questions](https://datalemur.com/questions?category=SQL) | [StrataScratch](https://www.stratascratch.com/) | Solve medium questions without copying patterns |
+| 5 | Recurring analytical patterns | [DataLemur SQL questions](https://datalemur.com/questions?category=SQL) | [LeetCode SQL 50](https://leetcode.com/studyplan/top-sql-50/) or [StrataScratch](https://www.stratascratch.com/) | Solve top-N-per-group, latest-record/deduplication and cohort-style tasks |
 | 6 | Validation SQL | Project data | — | Write count, uniqueness, null, accepted-value and referential checks |
 
 ## Practice
 
 - Save the diagnostic results in `sql-diagnostic.md`: problem, first attempt, mistake, corrected rule.
-- Complete at least 12 non-trivial problems independently, including 4 window-function problems.
+- Complete at least 12 non-trivial problems independently, including 4 window-function problems and one top-N-per-group and latest-record/deduplication task.
 - For one deliberately duplicated join, predict row counts before running it.
 - Produce five business queries and five validation queries for the flagship.
 

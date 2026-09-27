@@ -18,6 +18,7 @@ Do not start an elective because it is fashionable. Start one only when at least
 |---|---|---|---|
 | dbt | Repeated analytics-engineering/warehouse roles require it | Models, sources, tests, docs and incremental model on the flagship warehouse | Full semantic/mesh ecosystem |
 | Azure / ADF / Fabric / Databricks | Several target Egypt/Gulf jobs repeat the Microsoft stack | One small ingestion/transformation/deployment mapped from existing concepts | Rebuild the whole AWS project |
+| Managed warehouse | Several realistic jobs repeat Snowflake, BigQuery or Redshift | Load/query one warehouse, model one dataset and explain cost/performance choices | Study all warehouse vendors |
 | Kafka / streaming | Real target roles require event-stream processing | Producer/consumer, partitions/offsets, delivery semantics and one bounded stream pipeline | Distributed platform administration |
 | Hadoop / Hive | Interview/JD repeatedly requires ecosystem knowledge | Refresh HDFS/YARN/Hive and connect it to existing fundamentals | Relearn MapReduce implementation depth |
 | BI exposure | Roles combine engineering with consumption/reporting | One semantic/reporting layer over the warehouse | Become a dashboard specialist |

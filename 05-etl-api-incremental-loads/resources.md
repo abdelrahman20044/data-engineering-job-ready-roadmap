@@ -8,11 +8,10 @@
 
 ## Arabic / Egyptian
 
-- Garage Education ETL/data-warehouse use-case material — useful for an Arabic end-to-end explanation; adapt the pattern rather than copying its domain.
+- [Garage Education ETL playlist](https://www.youtube.com/playlist?list=PLxNoJq6k39G_R3AA108CLE8w6n_CCCmDf) — Arabic end-to-end alternative from the reference-roadmap audit; select only the API/extract/load lessons that match this level and adapt the pattern rather than copying its domain.
 
 ## English alternatives
 
-- Seattle Data Guy’s selected ETL/pipeline videos — supplementary architecture discussion.
 - [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) — reuse a narrowly relevant ingestion/workflow lab only; do not take it as a second curriculum.
 - *Fundamentals of Data Engineering*: Ch. 7 pp. 235–247 and 250–257; Ch. 8 pp. 309–323 as reference.
 
@@ -31,11 +30,13 @@
 ## Reference
 
 - [Requests documentation](https://requests.readthedocs.io/)
+- [Requests timeouts](https://requests.readthedocs.io/en/latest/user/quickstart/#timeouts)
 - [Psycopg transactions](https://www.psycopg.org/psycopg3/docs/basic/transactions.html)
 - [PostgreSQL `INSERT … ON CONFLICT`](https://www.postgresql.org/docs/current/sql-insert.html)
 
 ## Later / skip
 
 - Later: CDC/Debezium when a target role or project genuinely needs change streams.
+- Later: cursor-based state stores beyond the project database and sophisticated schema-evolution tooling.
 - Later: dbt when repeated target-job demand triggers L13.
 - Skip microservice/event-bus architecture for this batch project.
