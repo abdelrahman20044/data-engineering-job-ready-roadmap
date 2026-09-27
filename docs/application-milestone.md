@@ -30,3 +30,14 @@ Apply when:
 3. The remaining gaps are tool-specific or plausible to learn quickly.
 
 Do not self-reject because a description lists every tool used by the team.
+
+## Interview feedback loop
+
+After every assessment or interview, record the question or failure mode and classify it as:
+
+- a fundamental gap that affects many roles,
+- a repeated target-market tool gap,
+- a company-specific detail, or
+- an eligibility constraint that learning cannot fix.
+
+Patch repeated or high-impact fundamental gaps first. Do not pause the application cadence to chase every isolated tool or trivia question.
