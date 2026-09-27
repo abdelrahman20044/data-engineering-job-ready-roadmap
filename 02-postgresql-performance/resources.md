@@ -23,8 +23,8 @@
 
 ## Reference
 
-- [Using `EXPLAIN`](https://www.postgresql.org/docs/current/using-explain.html) and [`EXPLAIN` syntax](https://www.postgreSQL.org/docs/current/sql-explain.html)
-- [Planner statistics](https://www.postgreSQL.org/docs/current/planner-stats.html)
+- [Using `EXPLAIN`](https://www.postgresql.org/docs/current/using-explain.html) and [`EXPLAIN` syntax](https://www.postgresql.org/docs/current/sql-explain.html)
+- [Planner statistics](https://www.postgresql.org/docs/current/planner-stats.html)
 - [Routine vacuuming](https://www.postgresql.org/docs/current/routine-vacuuming.html)
 
 ## Later / skip
