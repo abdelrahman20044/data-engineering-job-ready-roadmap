@@ -4,7 +4,8 @@
 
 1. Requests and source API documentation for extraction behavior.
 2. The audited *Building ETL Pipelines with Python* sections for implementation patterns.
-3. PostgreSQL documentation plus a project-specific idempotency experiment.
+3. [Functional Data Engineering](https://maximebeauchemin.medium.com/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a) — read once for immutable inputs, deterministic/idempotent tasks, and reproducibility; then test the ideas rather than taking notes on the article.
+4. PostgreSQL documentation plus a project-specific idempotency experiment.
 
 ## Arabic / Egyptian
 
