@@ -12,12 +12,12 @@ Read plans and UI evidence, reason about partitions and shuffles, and run one ho
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
-| 1 | Jobs, stages and tasks | *Learning Spark*, 2e, Ch. 7 pp. 183–205 | Garage Education performance lessons | Connect lazy lineage to stage boundaries |
-| 2 | Partitions and shuffles | [Spark performance tuning](https://spark.apache.org/docs/latest/sql-performance-tuning.html) | DE Zoomcamp Spark UI lesson | Identify narrow/wide operations and shuffle causes |
-| 3 | File and partition sizing | Spark docs + project evidence | Tech Vault Parquet supplement | Compare `repartition` and `coalesce` deliberately |
-| 4 | Join strategies | Spark tuning docs | — | Test a broadcastable lookup and inspect the plan |
-| 5 | Caching and skew | Spark docs | — | Cache only reused expensive work; identify one skew symptom |
-| 6 | Plans and UI | [`DataFrame.explain`](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.explain.html) + Spark UI | — | Capture before/after evidence and state limitations |
+| 1 | Jobs, stages and tasks | *Learning Spark*, 2e, Ch. 7 pp. 183–205 | [Garage Education Spark/PySpark](https://www.youtube.com/playlist?list=PLxNoJq6k39G9lTU9A65HwC0uWD-XkqqOi) selected performance lessons | Connect lazy lineage to stage boundaries |
+| 2 | Partitions and shuffles | [Spark performance tuning](https://spark.apache.org/docs/latest/sql-performance-tuning.html) | DE Zoomcamp Spark UI lesson | Identify narrow/wide operations, exchanges and shuffle causes |
+| 3 | File and partition sizing | [Spark tuning guide](https://spark.apache.org/docs/latest/sql-performance-tuning.html) + project evidence | [Tech Vault: Parquet](https://www.youtube.com/watch?v=MLmrz_UfJ0Q) | Compare `repartition`/`coalesce`; observe tiny-file and over-partitioning effects |
+| 4 | Join strategies | [Spark tuning guide: join strategy](https://spark.apache.org/docs/latest/sql-performance-tuning.html#optimizing-the-join-strategy) | — | Test a broadcastable lookup and inspect the formatted physical plan |
+| 5 | Caching and skew | [Spark tuning guide](https://spark.apache.org/docs/latest/sql-performance-tuning.html) | — | Persist only reused expensive work; identify one skew symptom |
+| 6 | Plans and UI | [`DataFrame.explain`](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.explain.html) + [Spark UI](https://spark.apache.org/docs/latest/web-ui.html) | — | Capture before/after evidence and state limitations |
 
 ## Practice
 
