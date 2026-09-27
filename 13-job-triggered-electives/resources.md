@@ -10,10 +10,17 @@ Choose resources only after documenting the trigger. These are starting points, 
 
 ## Microsoft data stack
 
-- [Microsoft Learn: Azure Data Factory](https://learn.microsoft.com/en-us/training/azure-data-factory/)
+- [Azure Data Factory introduction](https://learn.microsoft.com/en-us/azure/data-factory/introduction)
 - [Microsoft Learn: Fabric](https://learn.microsoft.com/en-us/training/fabric/)
-- [Microsoft Learn: Azure Databricks](https://learn.microsoft.com/en-us/azure/databricks/)
+- [Azure Databricks: get started](https://learn.microsoft.com/en-us/azure/databricks/getting-started/)
 - Select the one stack repeated by target roles; do not study all three by default.
+
+## Managed warehouse
+
+- [Snowflake tutorials](https://docs.snowflake.com/en/user-guide-getting-started)
+- [BigQuery quickstarts](https://cloud.google.com/bigquery/docs/quickstarts)
+- [Amazon Redshift getting started](https://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html)
+- Select only the vendor repeated by target jobs. Reuse the existing dimensional model and compare loading, partitioning/clustering or distribution, query plans and cost controls.
 
 ## Kafka / streaming
 
