@@ -2,7 +2,7 @@
 
 ## Recommended path
 
-Use AWS Skill Builder only for the role-focused modules needed by the chosen architecture, then use each service’s official guide during deployment.
+Implement the default architecture from the level README. Use AWS service documentation during deployment and AWS Skill Builder only when a specific concept blocks implementation.
 
 ## Arabic / Egyptian
 
@@ -19,6 +19,7 @@ No Arabic resource is assigned as primary. Existing Cloud Practitioner knowledge
 - S3 raw/curated prefixes and lifecycle rule.
 - Minimal IAM policy validated against the real workflow.
 - Secret retrieval without static repository credentials.
+- EC2-to-RDS connectivity with no public database access, or the documented single-EC2 cost fallback.
 - CloudWatch log/metric evidence for one failure.
 - Budget alert and complete teardown.
 
@@ -28,9 +29,12 @@ No Arabic resource is assigned as primary. Existing Cloud Practitioner knowledge
 - [IAM documentation](https://docs.aws.amazon.com/iam/)
 - [Secrets Manager documentation](https://docs.aws.amazon.com/secretsmanager/)
 - [CloudWatch documentation](https://docs.aws.amazon.com/cloudwatch/)
+- [EC2 IAM roles](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html)
+- [RDS for PostgreSQL](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_PostgreSQL.html)
+- [VPC security groups](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html)
 
 ## Later / skip
 
 - Later: infrastructure as code if repeated deployment or target jobs justify it.
 - Skip another general certification path, broad tours of Glue/EMR/Redshift/Kinesis, and multi-account architecture.
-- Choose compute/database services from project constraints, not to maximize logos in the diagram.
+- Do not substitute Lambda, Glue, EMR, Redshift or EKS merely to maximize logos; change the default architecture only when project constraints or repeated job evidence justify it.
