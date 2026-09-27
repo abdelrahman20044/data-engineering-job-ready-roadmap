@@ -69,6 +69,29 @@ api-to-warehouse-data-platform/
 
 Create folders only when their level begins; an empty skeleton is not evidence.
 
+## Lightweight evidence conventions
+
+Record only decisions that materially affect the system. Put each in `docs/decisions/NNN-title.md` using:
+
+```text
+Decision
+Context
+Alternatives considered
+Choice and reason
+Trade-off / consequence
+```
+
+Good candidates are the warehouse grain, SCD policy, incremental key, late-data/idempotency strategy, Airflow task boundaries, and AWS deployment choice. Do not create a decision record for routine library or naming choices.
+
+Use repository tags only for reproducible milestones—not for every level:
+
+- `warehouse-v1`: model, DDL, seed/sample data and validated business queries.
+- `pipeline-v1`: idempotent incremental pipeline, tests, quality checks, Compose and runbook.
+- `orchestrated-v1`: scheduled DAG plus demonstrated failure, retry and backfill recovery.
+- `cloud-v1`: deployed architecture, sanitized configuration, monitoring and teardown/cost evidence.
+
+Architecture diagrams must describe the implementation that exists at that tag. Planned services belong in a clearly labelled future-state diagram, not in claimed portfolio evidence.
+
 ## Recruiter-verifiable claims
 
 By the end, a reviewer should be able to verify that you can model data, write SQL, build and test an incremental batch pipeline, containerize it, orchestrate failures and backfills, deploy it safely, and explain the choices.
