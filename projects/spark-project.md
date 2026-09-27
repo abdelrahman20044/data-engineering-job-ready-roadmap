@@ -32,3 +32,7 @@ Read raw files with an explicit schema, clean and transform them with DataFrames
 - Do not claim cluster-scale performance from a laptop run.
 - Do not add Kafka, Delta Lake, or Databricks unless a target role or a clear project requirement triggers the elective.
 - One measured experiment is more valuable than a list of tuning options.
+
+## Experiment evidence format
+
+Keep one concise `docs/experiment.md` with: hypothesis, fixed dataset/environment, baseline, one changed variable, metric, physical-plan/UI evidence, result, and limitations. If the difference is too small or noisy, report that honestly; the reasoning is the evidence.
