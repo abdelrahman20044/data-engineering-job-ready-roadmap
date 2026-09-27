@@ -12,20 +12,22 @@ Choose a public API with stable historical records and a business process you ca
 |---|---|---|
 | L01 · SQL | Analytical and validation queries | Independent SQL files, expected results, comments explaining non-obvious logic |
 | L02 · PostgreSQL | Constraints, transactions and one measured performance decision | DDL constraints plus before/after plan note |
-| L03 · Modeling | Business process, grain, dimensions, facts, keys, SCD decision, DDL | `docs/model.md`, star diagram, migrations/DDL, seed data, five business queries |
+| L03 · Modeling | Business process, grain, fact-table type, measures, dimensions, keys, SCD decision, DDL | `docs/model.md`, star diagram, migrations/DDL, seed data, five business queries |
 | L04 · Python | Maintainable package, CLI, configuration, logging and DB boundary | Package structure, reproducible command, transaction demonstration |
-| L05 · ETL | Extract → stage → transform → load; pagination; incremental state; idempotency | Raw landing samples, state strategy, rerun and reconciliation evidence |
-| L06 · Quality | Unit/integration tests, checks and failure behavior | Passing tests, quality SQL, deliberate-failure evidence |
+| L05 · ETL | Extract → stage → transform → load; pagination; incremental/late-arrival state; idempotency | Raw landing samples, state strategy, identical/overlap rerun and reconciliation evidence |
+| L06 · Quality | Unit/integration/contract tests, quality dimensions and failure behavior | Passing tests, quality SQL, database-boundary and deliberate-failure evidence |
 | L07 · Delivery | Git hygiene, Docker Compose, health checks, runbook and minimal CI | Clean checkout starts in one command; CI evidence |
 | L08 · Airflow | DAG, schedule, dependencies, connections and interval handling | DAG code and successful scheduled-run evidence |
-| L09 · Reliability | Retries, timeouts, backfills and monitoring | Failed/recovered runs, reconciled backfill, recovery note |
-| L12 · AWS | S3 landing, least-privilege IAM, secrets, compute/database, CloudWatch, cost guardrails | Architecture diagram, deployment steps, logs, teardown/cost note |
+| L09 · Reliability | Retries, timeouts, trigger rules, backfills and monitoring | Failed/recovered runs, reconciled backfill, failure-propagation and recovery note |
+| L12 · AWS | S3 raw/curated, EC2-hosted Dockerized workload, RDS PostgreSQL, IAM role, secrets, network boundary, CloudWatch and cost guardrails | Architecture diagram, deployment steps, logs, non-public DB evidence, teardown/cost note |
 
 ## Minimum architecture
 
 `Public API → raw landing → validated staging → dimensional PostgreSQL warehouse → analytical SQL`
 
 Airflow orchestrates existing pipeline functions; it must not contain the business logic itself. AWS replaces or extends local infrastructure only after the local system is repeatable.
+
+The default cloud implementation is `API → EC2-hosted Dockerized pipeline/Airflow → S3 raw/curated + private RDS PostgreSQL → CloudWatch`. A single-EC2 PostgreSQL fallback is acceptable only when cost is the reason and the trade-off is explicit.
 
 ## Non-negotiable engineering behavior
 
