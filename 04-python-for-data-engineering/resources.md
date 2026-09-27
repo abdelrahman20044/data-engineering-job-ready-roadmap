@@ -6,8 +6,7 @@ Use the [Exercism Python track](https://exercism.org/tracks/python) as a diagnos
 
 ## Arabic / Egyptian
 
-- Kiwilytics paid Arabic Python/Data Engineering material — consider only for a specific diagnosed gap after inspecting the syllabus.
-- Arabic beginner playlists are not assigned because backend experience already covers programming fundamentals.
+- [Mahara-Tech: Python Basics](https://maharatech.gov.eg/course/view.php?id=43) or [Elzero Python playlist](https://www.youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs) — use only the exact diagnosed topic. Neither is assigned linearly because existing backend experience already covers programming fundamentals.
 
 ## English alternatives
 
@@ -26,6 +25,7 @@ Use the [Exercism Python track](https://exercism.org/tracks/python) as a diagnos
 - [Python 3 documentation](https://docs.python.org/3/)
 - [Python Packaging User Guide](https://packaging.python.org/)
 - [Psycopg 3 documentation](https://www.psycopg.org/psycopg3/docs/)
+- [`pathlib`](https://docs.python.org/3/library/pathlib.html), [`typing`](https://docs.python.org/3/library/typing.html), [`json`](https://docs.python.org/3/library/json.html) and [`csv`](https://docs.python.org/3/library/csv.html)
 
 ## Later / skip
 
