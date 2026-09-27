@@ -12,19 +12,19 @@ Build a rerunnable batch pipeline from a public API into raw, staging and wareho
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
-| 1 | HTTP extraction | [Requests quickstart](https://requests.readthedocs.io/en/latest/user/quickstart/) | Garage Education ETL use-case material | Implement timeouts, pagination, status handling and bounded retries |
+| 1 | HTTP extraction | [Requests quickstart](https://requests.readthedocs.io/en/latest/user/quickstart/) | [Garage Education ETL playlist](https://www.youtube.com/playlist?list=PLxNoJq6k39G_R3AA108CLE8w6n_CCCmDf) | Implement connect/read timeouts, pagination, status handling, rate-limit respect and bounded retries |
 | 2 | Raw landing and contracts | Project API docs + *Fundamentals of Data Engineering*, Ch. 7 pp. 235–247 | — | Preserve raw input and document the expected schema |
-| 3 | Transform and load | *Building ETL Pipelines with Python*, Ch. 4 pp. 47–52 and Ch. 6 pp. 72–76 | Garage Education / Seattle Data Guy selected lessons | Separate pure transforms from I/O and load transactionally |
-| 4 | Incremental state | [PostgreSQL `INSERT`](https://www.postgresql.org/docs/current/sql-insert.html) | — | Use a watermark or source key plus upsert strategy |
+| 3 | Transform and load | *Building ETL Pipelines with Python*, Ch. 4 pp. 47–52 and Ch. 6 pp. 72–76 | Garage Education selected lessons | Separate pure transforms from I/O; batch writes and load transactionally |
+| 4 | Incremental state | [PostgreSQL `INSERT`](https://www.postgresql.org/docs/current/sql-insert.html) | — | Choose full vs incremental; use a source key/watermark, overlap window and upsert strategy |
 | 5 | Idempotency and recovery | *Fundamentals of Data Engineering*, Ch. 7 pp. 250–257 | — | Rerun the same interval without duplicate effects |
-| 6 | Reconciliation and drift | Project checks | — | Compare input/output/reject counts and quarantine invalid records |
+| 6 | Reconciliation and drift | Project checks | — | Compare input/output/reject counts; quarantine invalid records and record schema drift visibly |
 | 7 | Secrets and configuration | [Twelve-Factor config](https://12factor.net/config) | — | Remove credentials and environment choices from code |
 
 ## Practice
 
 - Extract multiple pages with explicit connect/read timeouts.
 - Persist raw responses or records with run and interval metadata.
-- Implement an incremental load and prove identical reruns do not duplicate rows.
+- Implement an incremental load and prove identical/overlapping reruns do not duplicate rows or lose a deliberately late record.
 - Inject an HTTP failure, malformed record and database failure; record expected behavior.
 - Reconcile extracted, accepted, rejected and loaded counts.
 
@@ -34,7 +34,7 @@ Implement the flagship path: `API → raw landing → validated staging → dime
 
 ## Interview check
 
-Explain ETL vs ELT, batch boundaries, full vs incremental loads, watermark limitations, idempotency, retries vs duplicates, upserts, schema drift and reconciliation.
+Explain ETL vs ELT, batch boundaries, full vs incremental loads, watermark/late-arrival limitations, idempotency, retries vs duplicates, upserts, schema drift and reconciliation.
 
 ## Completion criteria
 
