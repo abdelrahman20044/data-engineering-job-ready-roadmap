@@ -19,7 +19,7 @@ Open the level's `README.md` for the recommended path. Open its `resources.md` o
 | `README.md` inside a level | Ordered topics mapped directly to the resource you should use |
 | `resources.md` inside a level | Vetted alternatives, Arabic/English resources, books, practice, references, and later material |
 | [`projects/`](projects/flagship.md) | Implementation contracts that turn learning into proof |
-| [`docs/`](docs/application-milestone.md) | Application milestone, curriculum rationale, and resource-audit record |
+| [`docs/`](docs/application-milestone.md) | Application milestone, curriculum rationale, book guide, and resource/roadmap audit records |
 
 Difficulty: `●○○○○` introductory → `●●●●●` advanced. Hours are working estimates, not promises; diagnostics can shorten them.
 
@@ -89,6 +89,13 @@ Full contract: [`projects/spark-project.md`](projects/spark-project.md).
 - Add Airflow, Spark, and AWS evidence while applications are active.
 
 Evidence checklist: [`docs/application-milestone.md`](docs/application-milestone.md).
+
+## Research and reference guides
+
+- [`docs/book-guide.md`](docs/book-guide.md) — all 68 distinct library titles categorized, compared, ranked, and mapped just in time.
+- [`docs/external-roadmap-audit.md`](docs/external-roadmap-audit.md) — external-roadmap comparison, practitioner transcript synthesis, accepted/rejected resources, and resulting changes.
+- [`docs/resource-verification.md`](docs/resource-verification.md) — verification record for active learning resources.
+- [`docs/curriculum-decisions.md`](docs/curriculum-decisions.md) — market-evidence rationale and scope boundaries.
 
 ## Study rule
 
