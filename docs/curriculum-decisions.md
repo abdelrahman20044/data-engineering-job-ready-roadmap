@@ -22,6 +22,8 @@ The flagship already creates a real batch pipeline that needs scheduling, retrie
 
 Abdelrahman already has AWS Cloud Practitioner foundations. Practical AWS can therefore focus on deployment evidence rather than repeating generic cloud theory. Azure/ADF/Fabric/Databricks vocabulary remains an elective because it matters regionally, but switching the first cloud would add delay unless several target jobs repeatedly demand it.
 
+The implementation target is deliberately concrete: S3 raw/curated storage, one EC2-hosted Dockerized workload, private RDS PostgreSQL, an instance role/secrets, and CloudWatch evidence. A documented single-EC2 database fallback is allowed for cost. The L12 estimate increased from 24 to 30 hours because the former placeholder did not account for networking, centralized logs and teardown verification.
+
 ## Why Kafka and advanced Hadoop are electives
 
 Streaming and Hadoop ecosystem depth are specialized and often associated with larger-scale or more experienced roles. Existing Hadoop fundamentals are retained for interview context. Neither should delay SQL, Python ETL, testing, orchestration, or a deployable project.
