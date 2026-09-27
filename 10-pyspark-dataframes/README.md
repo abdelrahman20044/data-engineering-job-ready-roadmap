@@ -8,6 +8,13 @@
 
 Build a separate PySpark pipeline using explicit schemas, DataFrame transformations and partitioned Parquet. Understand lazy evaluation well enough to avoid treating Spark as “pandas on a cluster.”
 
+## Diagnostic gate · 60 minutes
+
+With documentation closed, create a local Spark session, read a small file with an explicit schema, apply a filter and derived column, join reference data, calculate one window result, and write partitioned Parquet. Before the final action, predict which operations are lazy and where a shuffle may occur; then inspect the plan.
+
+- If the pipeline works and your plan explanation is accurate, shorten the foundation reading and move to testing plus the project workload.
+- If you depend on schema inference, Python UDFs, or trial-and-error joins, study only the matching topics below before retrying.
+
 ## Topics and learning resources
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
