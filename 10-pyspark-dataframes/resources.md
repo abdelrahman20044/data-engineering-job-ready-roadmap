@@ -6,8 +6,8 @@ Use selected Data Engineering Zoomcamp Spark exercises for guided practice, audi
 
 ## Arabic / Egyptian
 
-- Garage Education’s Spark/PySpark chapter (roughly 51 videos in the audited reference) — strong Arabic alternative; select DataFrame, schema, transformation, join and partition lessons only.
-- Tech Vault Parquet explanation — focused supplement for columnar storage.
+- [Garage Education Spark/PySpark playlist](https://www.youtube.com/playlist?list=PLxNoJq6k39G9lTU9A65HwC0uWD-XkqqOi) — strong Arabic alternative; select DataFrame, schema, transformation, join and partition lessons only.
+- [Tech Vault: Parquet](https://www.youtube.com/watch?v=MLmrz_UfJ0Q) — focused supplement for columnar storage.
 
 ## English alternatives
 
@@ -30,6 +30,8 @@ Use selected Data Engineering Zoomcamp Spark exercises for guided practice, audi
 
 - [Apache Spark documentation](https://spark.apache.org/docs/latest/)
 - [PySpark API reference](https://spark.apache.org/docs/latest/api/python/)
+- [Testing PySpark](https://spark.apache.org/docs/latest/api/python/getting_started/testing_pyspark.html)
+- [Parquet data source](https://spark.apache.org/docs/latest/sql-data-sources-parquet.html)
 - [Parquet format](https://parquet.apache.org/docs/)
 
 ## Later / skip
