@@ -1,6 +1,6 @@
 # Resource Verification
 
-Last checked: **2026-09-25**.
+Last checked: **2026-09-26**.
 
 Selection standard: topic coverage, technical accuracy, practical usefulness, fit for a non-beginner programmer, current relevance, provider credibility, and ability to produce inspectable evidence.
 
@@ -22,11 +22,33 @@ Selection standard: topic coverage, technical accuracy, practical usefulness, fi
 | AWS Skill Builder's Data Engineering on AWS learning plan | Guided AWS context | Official role-focused material and labs | Dynamic pages may require sign-in; use only relevant modules, not certification prep |
 | AWS service docs | S3/IAM/secrets/logging | Current and authoritative security/operations guidance | Implement a small architecture; avoid broad service tours |
 
+## 13-level coverage audit · 2026-09-26
+
+The audit preserved all levels and their order. It compared each level's learning outcomes, topic decomposition, practice, project increment, interview check and exit criteria against the existing 54-JD/42-early-career evidence base. It also inspected the corresponding level/resource pages in the reference roadmap before accepting individual resource leads.
+
+| Level | Coverage correction | Resource correction |
+|---|---|---|
+| L01 · SQL | Added top-N-per-group and latest-record/deduplication as recurring analytical patterns; moved gaps-and-islands/sessionization later | Linked the exact Mahara course and exact PostgreSQL Exercises sections; added bounded SQL 50 alternative |
+| L02 · PostgreSQL | Kept the scope at constraints, indexes, plans, estimates and transactions—not DBA tuning | Replaced vague Tech Vault labels with Use The Index, Luke and one named visual index explanation |
+| L03 · Modeling | Added fact-table types, additivity, key choices, date/conformed/role-playing/degenerate dimensions | Linked the exact Garage DWH playlist, Tech Vault OLTP/OLAP lesson and Kimball technique PDF |
+| L04 · Python | Added file/data interfaces and typed public boundaries without restarting programming basics | Linked the exact Mahara/Elzero gap-only options and targeted standard-library pages |
+| L05 · ETL | Added rate-limit handling, batching, overlap-window/late-arrival behavior and visible drift policy | Removed the broad Seattle Data Guy recommendation; linked Requests timeouts and the discovered Garage playlist |
+| L06 · Quality | Named six quality dimensions; added contract, database-boundary, atomicity and idempotency checks | Added pytest's good-practices page; kept quality frameworks later |
+| L07 · Delivery | Added build context/layers/cache, volume vs bind mount, networking, health/readiness and explicit Compose behavior | Linked exact Pro Git chapters, Docker Python/best-practice/Compose pages and a bounded Arabic Docker course |
+| L08 · Airflow | Added current TaskFlow, connection/variable handling, local Docker execution and CLI validation | Replaced broad Airflow/course references with stable official pages; retained Astronomer as optional structured support |
+| L09 · Reliability | Added trigger rules/failure propagation alongside retries, idempotency, backfills, XComs and sensors | Linked the exact official trigger-rule, XCom, sensor and callback pages |
+| L10 · PySpark | Added null/date handling and deterministic DataFrame/schema testing | Linked current Spark SQL, Parquet and Testing PySpark pages plus exact Arabic/Parquet alternatives |
+| L11 · Spark performance | Made exchanges, small files, formatted plans and evidence limits explicit | Replaced broad “Spark docs” references with tuning, join-strategy, `explain` and UI pages |
+| L12 · AWS | Defined one deployable default: S3 + EC2 Docker workload + private RDS PostgreSQL + CloudWatch, with a documented low-cost fallback | Replaced service-tour placeholders with direct S3, IAM role, VPC/RDS, EC2, CloudWatch and cost pages |
+| L13 · Electives | Added a managed-warehouse trigger; preserved all elective gates | Replaced the stale/broad ADF training link and added vendor-specific warehouse starting points |
+
+The only material time change is L12, from **24 to 30 hours**, because a secure network boundary, EC2/RDS deployment, centralized logs and teardown evidence cannot credibly fit the earlier placeholder scope. Other additions replace or clarify existing study time rather than expand the curriculum.
+
 ## Reference-roadmap audit
 
 On **2026-09-25**, the actual tier, level and resource pages in [Yahia Sherif's Data Engineering Roadmap 2026](https://github.com/Yahiasherif002/Data-Engineering-Roadmap-2026) were inspected as an information-architecture and resource-discovery reference. Reused design ideas are limited to tier tables, explicit prerequisites/unlocks, dominant topic-to-resource maps, separate deep-resource pages and evidence-based completion gates.
 
-Selected resource leads reused after fit-checking include Learn Git Branching, Pro Git, GitHub Skills, Modern SQL, Use The Index Luke, PostgreSQL Exercises, Kimball techniques, Garage Education/Tech Vault topic explanations, Astronomer material, Data Engineering Zoomcamp's selected Spark exercises, Databricks/Spark references and AWS official training. Senior material such as Kubernetes, broad IaC, streaming platforms, governance stacks and deep database/Spark internals was not imported into the core path.
+Selected resource leads reused after fit-checking include Learn Git Branching, Pro Git, GitHub Skills, Modern SQL, Use The Index Luke, PostgreSQL Exercises, Kimball techniques, the exact Garage DWH/Spark playlists, focused Tech Vault OLTP/OLAP and Parquet explanations, Astronomer material, Data Engineering Zoomcamp's selected Spark exercises and official Spark/AWS references. Senior material such as Kubernetes, broad IaC, streaming platforms, governance stacks and deep database/Spark internals was not imported into the core path.
 
 ## Audited books used just in time
 
@@ -48,8 +70,10 @@ Exact assignments are copied from the completed PDF audit, not guessed from onli
 - Broad AWS certification material: Cloud Practitioner is already complete; project deployment is the objective.
 - Great Expectations: optional reference after explicit data checks and pytest are understood.
 
-## Unverified or intentionally omitted
+## Manual uncertainty and dynamic resources
 
-No Arabic resource was promoted to universal PRIMARY. Garage Education, Tech Vault and Kube-ops topic material is listed as an alternative where the audited reference supplied a close topic match; stable lesson-level URLs and full currency were not independently established. Confirm the precise lesson before using it. The curriculum never fills an Arabic slot for symmetry.
-
-AWS Skill Builder pages are dynamic and may require authentication. The official learning plan was discoverable, but stable deep links can change. AWS service documentation remains the durable fallback.
+- No Arabic resource was promoted to universal PRIMARY. The exact Mahara Transact-SQL page, Garage DWH playlist and Tech Vault OLTP/OLAP/Parquet pages were inspected. The Garage ETL and Spark playlist URLs were extracted from the live reference repository, but individual video titles/order still require a manual check before study; they remain alternatives, not dependencies.
+- Astronomer Academy and AWS Skill Builder are dynamic and may require an account. Official Airflow/AWS service documentation is the durable fallback and owns current behavior.
+- YouTube availability, subtitles and playlist order can change without a stable version. The level README still works if every optional video disappears.
+- Microsoft renamed and repositioned parts of its data-integration stack. The old broad ADF training URL was replaced with the current ADF product introduction plus current Fabric training; only a job-triggered elective should choose between them.
+- Automated bulk URL checking was not treated as proof of instructional quality. Primary technical references were resolved to official documentation; dynamic/sign-in resources remain explicitly optional.
