@@ -12,12 +12,13 @@ Use Airflow to schedule and observe existing pipeline functions. Keep business l
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
 |---:|---|---|---|---|
-| 1 | Orchestration mental model | *Data Pipelines with Apache Airflow*, 2e, Ch. 1 §§1.1–1.3 | Data with Marc / selected Arabic explanation | Contrast orchestration with transformation and execution |
+| 1 | Orchestration mental model | *Data Pipelines with Apache Airflow*, 2e, Ch. 1 §§1.1–1.3 | — | Contrast orchestration with transformation and execution |
 | 2 | Architecture | Book Ch. 2 §§2.2–2.6 + [Airflow core concepts](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/index.html) | — | Explain scheduler, executor, workers and metadata DB at a working level |
-| 3 | DAGs, tasks and dependencies | [Astronomer Airflow 101](https://academy.astronomer.io/path/airflow-101) + book Ch. 3 §§3.4–3.7 | Data Engineering Zoomcamp workflow module | Build a small DAG that calls existing functions |
-| 4 | Connections, variables and logs | Airflow docs + book Ch. 5 §§5.2–5.4 | — | Remove credentials from DAG code and inspect task logs |
+| 3 | DAGs, tasks and dependencies | [Airflow TaskFlow tutorial](https://airflow.apache.org/docs/apache-airflow/stable/tutorial/taskflow.html) + book Ch. 3 §§3.4–3.7 | [Astronomer Airflow 101](https://academy.astronomer.io/path/airflow-101) | Build a small DAG that calls existing functions |
+| 4 | Connections, variables and logs | [Airflow connections](https://airflow.apache.org/docs/apache-airflow/stable/howto/connection.html), [variables](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/variables.html) + book Ch. 5 §§5.2–5.4 | — | Keep credentials/config out of DAG code and inspect task logs |
 | 5 | Logical date and data interval | [Airflow DAG runs](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/dag-run.html) | — | Pass an interval explicitly to the pipeline |
 | 6 | Clean DAG design | [Airflow best practices](https://airflow.apache.org/docs/apache-airflow/stable/best-practices.html) | — | Keep DAG parsing light and tasks independently rerunnable |
+| 7 | Local execution and validation | [Running Airflow in Docker](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) | — | Parse/test the DAG locally before depending on the UI |
 
 ## Practice
 
@@ -25,6 +26,7 @@ Use Airflow to schedule and observe existing pipeline functions. Keep business l
 - Trigger one manual run and one scheduled run for a known interval.
 - Move credentials to an Airflow connection or environment-backed secret.
 - Inspect task logs and document the run’s data interval.
+- Run a DAG parse/import check and test one task for a fixed interval from the CLI.
 
 ## Project application
 
