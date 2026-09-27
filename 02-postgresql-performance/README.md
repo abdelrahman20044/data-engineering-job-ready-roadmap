@@ -6,7 +6,7 @@
 
 ## What you will learn
 
-Design trustworthy PostgreSQL tables and use evidence—not folkore—to improve a slow query. The objective is basic performance reasoning, not database administration.
+Design trustworthy PostgreSQL tables and use evidence—not folklore—to improve a slow query. The objective is basic performance reasoning, not database administration.
 
 ## Topics and learning resources
 
