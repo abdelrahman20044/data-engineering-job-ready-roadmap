@@ -8,6 +8,13 @@
 
 Translate a business process into a model with an explicit grain, useful facts and dimensions, defensible keys, and a deliberate history strategy. This is the decision point where the audited Kimball reading belongs.
 
+## Diagnostic gate · 45 minutes
+
+Before studying, take one small operational dataset and, without references, declare the business process and grain, identify the fact and dimensions, choose natural/surrogate keys, classify the measures, and state whether one dimension needs SCD Type 1 or 2. Then test the proposed grain against five sample rows.
+
+- If every choice is coherent and you can defend it, skip introductory explanations and move directly to the selected Kimball sections plus the flagship model.
+- If the grain changes while you answer, facts mix levels of detail, or history behavior is vague, study only those exposed gaps before retrying with a different process.
+
 ## Topics and learning resources
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
