@@ -8,6 +8,13 @@
 
 Deploy the flagship with a small, secure and observable AWS architecture. The default target is **S3 raw/curated storage + a Dockerized pipeline/Airflow on one EC2 instance + PostgreSQL on RDS + CloudWatch**. If cost is the binding constraint, run PostgreSQL on the EC2 instance and document the reliability/security trade-off. Build on existing Cloud Practitioner knowledge; do not repeat a broad certification syllabus.
 
+## Diagnostic gate · 45 minutes
+
+Without a certification review, sketch the target architecture and explain the request/data path, IAM role, security-group rules, secret retrieval, log destination, main cost drivers, and teardown order. Write the minimum permissions the EC2 workload needs in plain language.
+
+- Use the result to skip familiar service introductions and open only the official documentation needed for implementation.
+- Cloud Practitioner knowledge can shorten study, but it does **not** skip this level: completion still requires a deployed, observable, cost-controlled pipeline with no long-lived credentials.
+
 ## Topics and learning resources
 
 | Order | Topic | Primary resource | Arabic / alternative | Action |
