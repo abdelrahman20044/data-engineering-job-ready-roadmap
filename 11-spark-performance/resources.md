@@ -6,7 +6,7 @@ Use *Learning Spark* Ch. 7 for the first mental model, then the current Spark tu
 
 ## Arabic / Egyptian
 
-- Garage Education selected lessons on partitions, shuffles and optimization.
+- [Garage Education Spark/PySpark playlist](https://www.youtube.com/playlist?list=PLxNoJq6k39G9lTU9A65HwC0uWD-XkqqOi) — select only its partitions, shuffles and optimization lessons.
 - Use the Arabic lesson to build intuition, then verify the plan and UI yourself.
 
 ## English alternatives
@@ -34,5 +34,5 @@ Use *Learning Spark* Ch. 7 for the first mental model, then the current Spark tu
 
 ## Later / skip
 
-- Later: AQE internals, custom partitioners, memory management internals and cluster sizing.
+- Later/reference: Adaptive Query Execution internals, custom partitioners, memory-management internals and cluster sizing.
 - Skip lists of tuning knobs without a measured bottleneck.
